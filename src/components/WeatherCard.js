@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import WeatherMood from './WeatherMood';
 import PersonalStory from './PersonalStory';
+import {Spinner} from 'react-bootstrap';
 
 const WeatherCard = ({ apiKey, location }) => {
   const [weatherData, setWeatherData] = useState(null);
@@ -11,7 +12,10 @@ const WeatherCard = ({ apiKey, location }) => {
       .then(data => setWeatherData(data));
   }, [location, apiKey]);
 
-  if (!weatherData || weatherData.cod !== 200) return <div className='App-logo-spin'>Loading...</div>;
+  if (!weatherData || weatherData.cod !== 200) return <div className="d-flex justify-content-center align-items-center" style={{ height: '50vh' }}>
+  <Spinner animation="border" variant="primary" />
+</div>
+
   console.log(weatherData);
   return (
     <div className='main-content'>
