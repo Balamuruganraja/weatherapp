@@ -71,3 +71,38 @@ nav ul li {
 .weather-card h2, .weather-mood h2, .personal-story h2 {
   margin-top: 0;
 }
+
+.personal-story h2 {
+  margin: 0;
+}
+
+.weather-card p, .weather-mood p, .personal-story p {
+  margin: 10px 0;
+}
+
+.d-flex {
+  display: flex !important;
+}
+
+.justify-content-center {
+  justify-content: center !important;
+}
+
+.align-items-center {
+  align-items: center !important;
+}
+
+.user-type-selector {
+  margin-bottom: 20px;
+}
+
+.user-type-selector label {
+  margin-right: 15px;
+  font-weight: 500;
+  font-size: 20px;
+}
+
+.user-type-selector input {
+  margin-right: 10px;
+  transform: scale(1.5)
+}
