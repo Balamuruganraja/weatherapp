@@ -65,7 +65,13 @@ nav ul li {
   border-radius: 8px;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
   flex: 1;
-  margin: 0 10px;
+  margin: 10px;
+  transition: transform 0.5s ease, box-shadow 0.3s ease;
+}
+
+.weather-card:hover, .weather-mood:hover, .personal-story:hover {
+  transform: translate(3px, -10px);
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.8);
 }
 
 .weather-card h2, .weather-mood h2, .personal-story h2 {
