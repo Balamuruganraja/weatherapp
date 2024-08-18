@@ -59,6 +59,12 @@ nav ul li {
   margin: 20px;
 }
 
+@media screen and (max-width:"768px") {
+  .main-content{
+    flex-direction: column;
+  }
+}
+
 .weather-card, .weather-mood, .personal-story {
   background: white;
   padding: 20px;
